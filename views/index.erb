@@ -1,0 +1,31 @@
+<form action = "/div" method = "post">
+	<input value="<%= @first_no %>"  type="text" name="first_no" >
+	<input value="<%= @second_no %>" type="text" name="second_no">
+	<input type="submit" value="divide">
+</form>
+
+<%= @result %>
+
+<form action = "/multi" method = "post">
+	<input value="<%= @first_no %>"  type="text" name="first_no" >
+	<input value="<%= @second_no %>" type="text" name="second_no">
+	<input type="submit" value="multiply">
+</form>
+
+<%= @result %>
+
+<form action = "/add" method = "post">
+	<input value="<%= @first_no %>"  type="text" name="first_no" >
+	<input value="<%= @second_no %>" type="text" name="second_no">
+	<input type="submit" value="add">
+</form>
+
+<%= @result %>
+
+<form action = "/sub" method = "post">
+	<input value="<%= @first_no %>"  type="text" name="first_no" >
+	<input value="<%= @second_no %>" type="text" name="second_no">
+	<input type="submit" value="substract">
+</form>
+
+<%= @result %>
