@@ -1,7 +1,13 @@
-<form action = "/add" method = "post">
-	<input value="<%= @first_no %>"  type="text" name="first_no" >
-	<input value="<%= @second_no %>" type="text" name="second_no">
-	<input type="submit" value="add">
-</form>
+<div class="container">
+	<form action = "/add" method = "post">
+		<input value="<%= @first_no %>"  type="text" name="first_no" >
+		<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+		<input value="<%= @second_no %>" type="text" name="second_no">
+		<input type="submit" class="btn btn-primary" value="add" >
+		<a href="/" class="btn btn-primary">Back</a>
 
-<%= @result %>
+
+	</form>
+</div>	
+
+	<%= @result %>

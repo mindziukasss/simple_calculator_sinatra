@@ -1,7 +1,11 @@
-<form action = "/sub" method = "post">
-	<input value="<%= @first_no %>"  type="text" name="first_no" >
-	<input value="<%= @second_no %>" type="text" name="second_no">
-	<input type="submit" value="substract">
-</form>
+<div class="container">	
+	<form action = "/sub" method = "post">
+		<input value="<%= @first_no %>"  type="text" name="first_no" >
+		<span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+		<input value="<%= @second_no %>" type="text" name="second_no">
+		<input type="submit" class="btn btn-primary" value="substract">
+		<a href="/" class="btn btn-primary">Back</a>
+	</form>
+</div>
 
 <%= @result %>
