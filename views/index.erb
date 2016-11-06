@@ -1,34 +1,21 @@
 <div class="container">
-	<form action = "/div" method = "post">
-		<input value="<%= @first_no %>"  type="text" name="first_no" >
-		<span class="glyphicon glyphicon-eye-close"></span>
-		<input value="<%= @second_no %>" type="text" name="second_no">
-		<input type="submit" class="btn btn-primary" value="divide">
-	</form>
+	<div class="col-md-6">
+		<form action = "/div" method = "post">
+			<input type="submit" class="button" value="÷">
+		</form>
 
+		<form action = "/multi" method = "post">
+			<input type="submit" class="button" value="*">
+		</form>
 
-	<form action = "/multi" method = "post">
-		<input value="<%= @first_no %>"  type="text" name="first_no" >
-		<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-		<input value="<%= @second_no %>" type="text" name="second_no">
-		<input type="submit" class="btn btn-primary" value="multiply">
-	</form>
+		<form action = "/add" method = "post">
+			<input type="submit" class="button" value="+">
+		</form>
 
+		<form action = "/sub" method = "post">
+			<input type="submit" class="button" value="-">
+		</form>
 
-	<form action = "/add" method = "post">
-		<input value="<%= @first_no %>"  type="text" name="first_no" >
-		<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-		<input value="<%= @second_no %>" type="text" name="second_no">
-		<input type="submit" class="btn btn-primary" value="add">
-	</form>
-
-	
-
-	<form action = "/sub" method = "post">
-		<input value="<%= @first_no %>"  type="text" name="first_no" >
-		<span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-		<input value="<%= @second_no %>" type="text" name="second_no">
-		<input type="submit" class="btn btn-primary" value="substract">
-	</form>
+		
+	</div>
 </div>
-	
