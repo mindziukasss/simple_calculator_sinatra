@@ -1,21 +1,55 @@
 <div class="container">
-	<div class="col-md-6">
-		<form action = "/div" method = "post">
-			<input type="submit" class="button" value="÷">
-		</form>
 
-		<form action = "/multi" method = "post">
-			<input type="submit" class="button" value="*">
-		</form>
+<div class="col-md-6">
+	<div class="input-group input-group-lg">
+	  <input type="text" class="form-control" >
+	  <br>
+	  <!-- <br>
+	  <br>
+			<form action = "/div" method = "post">
+				<input type="submit" class="button" value="÷">
+			</form>
 
-		<form action = "/add" method = "post">
-			<input type="submit" class="button" value="+">
-		</form>
+			<form action = "/multi" method = "post">
+				<input type="submit" class="button" value="*">
+			</form>
 
-		<form action = "/sub" method = "post">
-			<input type="submit" class="button" value="-">
-		</form>
+			<form action = "/add" method = "post">
+				<input type="submit" class="button" value="+">
+			</form>
+
+			<form action = "/sub" method = "post">
+				<input type="submit" class="button" value="-">
+			</form> -->
+
+
+			<ol id="selectable">
+			  <li class="button">/</li>
+			  <li class="button">*</li>
+			  <li class="button">+</li>
+			  <li class="button">-</li>
+			  <li class="button">1</li>
+			  <li class="button">2</li>
+			  <li class="button">3</li>
+			  <li class="button">4</li>
+			  <li class="button">5</li>
+			  <li class="button">6</li>
+			  <li class="button">7</li>
+			  <li class="button">8</li>
+			  <li class="button">9</li>
+			  <li class="button">0</li>
+			  <li class="button">C</li>
+			  <li class="button">=</li>
+			</ol>
+
+		<script>
+		$( function() {
+		  $( "#selectable" ).selectable();
+		} );
+
+		</script>
 
 		
+	</div>
 	</div>
 </div>
